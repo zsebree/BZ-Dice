@@ -1,0 +1,56 @@
+div#leftSide {
+    width: 70%;
+    float: left;
+    margin: 0 auto 0 auto;
+    border: 1px solid black;
+    display: inline;
+}
+
+div#rightSide {
+    width: 49%;
+    float: left;
+    margin: 0 auto 0 auto;
+    border: 1px solid black;
+    display: inline;
+}
+
+textarea {
+    margin-left: 30%;
+}
+
+.marginleft40Percent {
+    margin-right: 10%;
+    margin-bottom: .1em;
+}
+
+.heroTable {
+    border: 1px solid black;
+    width: 100%;
+    text-align: absolute;
+    text-align: center;
+}
+
+.armorTable {
+    border: 1px solid black;
+    width: 50%;
+    text-align: absolute;
+    text-align: center;
+    display: inline;
+    float: left;
+    
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+
+legend {
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+}
+
+legend.smallFont {
+    font-size: .75em;
+}

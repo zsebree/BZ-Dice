@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>BZ Dice</title>
+      <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    
+     <div style="display: table; height: 400px; overflow: hidden;">
+         <div style="display: table-cell; vertical-align: middle;">  
+      
+            <div id="leftSide">
+                
+            <form>
+                <fieldset>
+                    <legend>Actions</legend>
+             <table class="heroTable">
+                <legend>Costs 1 action</legend>
+              <tr> 
+                <td><pre><legend class="smallFont">Pick highest kept prime attack dice rolled, 
+all dice rolled become that number.</legend></pre>Aim<input class="alignLeft" type="checkbox" name="advantage" value="advantage"></td>
+                  
+               
+        
+                <td><pre><legend class="smallFont">Pick highest kept prime defense dodge dice rolled, 
+all dice rolled become that number.</legend></pre>Dodge<input class="alignCenter" type="checkbox" name="advantage" value="advantage"></td>
+                  
+                  
+        
+                <td><pre><legend class="smallFont">Pick highest kept prime defense parry dice rolled, 
+all dice rolled become that number.</legend></pre>Parry<input class="alignCenter" type="checkbox" name="advantage" value="advantage"></td>
+                  
+             
+       <!  This will be tied into magic system once we flesh out melee combat a little more >
+                <td><pre><legend class="smallFont">Pick highest kept prime concentration dice rolled, 
+all dice rolled become that number.</legend></pre>Focus<input class="alignRight" type="checkbox" name="advantage" value="advantage"></td>
+       
+                  
+                  
+                  
+                  
+                </tr>
+              </table>
+                </fieldset>
+             </form>           
+              
+                 
+            <form>
+                <fieldset>
+                    <legend>Attributes</legend>
+                    
+             <table class="heroTable">
+              <tr>
+                <td>Might:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td><legend class="smallFont">+1 per Attribute</legend>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+    
+                <td><legend class="smallFont">Primary Attribute</legend>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+        
+                <td><legend class="smallFont">Roll 2 Fate(d20) dice keep the highest</legend>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+        
+                <td><legend class="smallFont">Roll 2 Fate(d20) dice keep the lowest</legend>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+            
+                    
+                 
+                  <tr>
+                <td>Flexile:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+      
+               
+        
+                <tr>
+                <td>Agile:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+
+                    
+        
+                <tr>
+                <td>Finesse:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+                   
+        
+                <tr>
+                <td>Vitality:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+                  
+        
+                <tr>
+                <td>Vigor:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+
+                   
+                <tr>
+                <td>Wit:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+
+                 
+        
+                <tr>
+                <td>Cunning:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+                
+                   
+        
+                <tr>
+                <td>Insight:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+
+                    
+                <tr>
+                <td>Guile:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+                
+                  
+                <tr>
+                <td>Allure:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+
+                    
+        
+               <tr>
+                <td>Physique:<input type="text" name="heroStats" style="width: 20px" maxlength="2"></td>
+        
+                <td>Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2"></td>
+       
+                <td>Prime<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Advantage<input type="checkbox" name="advantage" value="advantage"></td>
+         
+                <td>Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage"></td>
+                  </tr>
+
+                   
+      
+    </table>
+
+    <table class="armorTable">
+        <tr>
+        
+        <td>Light Armor</td>
+        <td>Medium Armor</td>
+        <td>Heavy Armor</td>
+        <td><pre><legend class="smallFont">Dice kept regardless of fate rolls.</legend></pre>Aptitude:<input type="text" name="keptDice" style="width: 20px" maxlength="2"></td>
+            
+                    
+        </tr>
+    <tr>
+        <td>Padded 1d2:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td>Hide 2d2:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td>Ringmail d8:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td><pre><legend class="smallFont">Dice pool that can be used for actions.
+May only be used once per tick.</legend></pre>Action Pool:<input type="text" name="keptDice" style="width: 20px" maxlength="2"></td>
+    
+    </tr>
+       
+    <tr>
+        <td>Leather 1d3:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td>Chain shirt d6:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td>Chain mail d8+1:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+    </tr>
+    
+    <tr>
+        <td>Studded Leather 1d4:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td>Scale mail 2d3:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td>Splint 1d10:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Breastplate d8:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td>Plate mail 1d12:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Half Plate 2d4:<input type="text" name="armorStats" style="width: 20px" maxlength="2"></td>
+        <td></td>
+    </tr>
+    
+        
+    </table>
+                    <div>
+                    <select name="current-state">
+                    <option value="kobold">Kobold</option>
+                    <option value="Ogre">Ogre</option>
+                        
+                    </select>
+                    <p>Here I'd like to have some pre-made monsters to fight and have their stats show up in this box.</p>
+                    
+                    </div>
+      </fieldset>
+             </form> 
+                
+
+                <textarea rows="10" cols="55"></textarea>
+                
+                <input class="marginleft40Percent" type="submit" name="heroCombatInitiate" value="Fight">
+                 
+    </div>
+       
+    <div id="rightSide">
+                Aim<input class="alignLeft" type="checkbox" name="advantage" value="advantage">
+        
+                Dodge<input class="alignCenter" type="checkbox" name="advantage" value="advantage">
+        
+                Parry<input class="alignCenter" type="checkbox" name="advantage" value="advantage">
+       
+                Focus<input class="alignRight" type="checkbox" name="advantage" value="advantage">
+                
+                    <br><br>
+       
+                Might:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+    
+                Prime<input type="checkbox" name="advantage" value="advantage">
+        
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+        
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Felxile:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+       
+                Prime<input type="checkbox" name="advantage" value="advantage">
+         
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+         
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+        
+                    <br><br>
+        
+                Agile:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+    
+                Prime<input type="checkbox" name="advantage" value="advantage">
+        
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+        
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Finesse:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+       
+                Prime<input type="checkbox" name="advantage" value="advantage">
+         
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+         
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Vitality:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+    
+                Prime<input type="checkbox" name="advantage" value="advantage">
+        
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+        
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Vigor:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+       
+                Prime<input type="checkbox" name="advantage" value="advantage">
+         
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+         
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Wit:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+    
+                Prime<input type="checkbox" name="advantage" value="advantage">
+        
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+        
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Cunning:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+       
+                Prime<input type="checkbox" name="advantage" value="advantage">
+         
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+         
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Insight:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+    
+                Prime<input type="checkbox" name="advantage" value="advantage">
+        
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+        
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+            
+                    <br><br>
+        
+                Guile:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+       
+                Prime<input type="checkbox" name="advantage" value="advantage">
+         
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+         
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+                Allure:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+    
+                Prime<input type="checkbox" name="advantage" value="advantage">
+        
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+        
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+            
+                    <br><br>
+        
+                Physique:<input type="text" name="heroStats" style="width: 20px" maxlength="2">
+        
+                Modifier:<input type="text" name="heroModifier" style="width: 20px" maxlength="2">
+       
+                Prime<input type="checkbox" name="advantage" value="advantage">
+         
+                Advantage<input type="checkbox" name="advantage" value="advantage">
+         
+                Disadvantage<input type="checkbox" name="disadvantage" value="disadvantage">
+
+                    <br><br>
+        
+        <textarea rows="10" cols="55"></textarea>
+        
+        <input class="marginleft40Percent" type="submit" name="villianCombatInitiate" value="Villian attack">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          </div>
+        </div>
+      </div>
+  </body>    
+</html>
